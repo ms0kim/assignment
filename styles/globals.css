@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'Exo';
+  font-weight: 400;
+  src: url('../public/font/Exo2-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Exo';
+  font-weight: 500;
+  src: url('../public/font/Exo2-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  src: url('../public/font/Montserrat-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  src: url('../public/font/Montserrat-Bold.woff') format('woff');
+}
+
+:root {
+  --light-light: #e0cfca;
+  --light: #c6b6b1;
+  --text: #615d5b;
+  --sub: #d2a495;
+  --pink: #dbafa0;
+  --back: #f2e3de;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+body {
+  margin: 0;
+  color: #000;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.27px;
+  width: 100%;
+}
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+h2 {
+  font-family: 'Exo';
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: -0.72px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.36px;
+  font-weight: 500;
+}
+h4 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 42px;
+}
+a{
+  font-family: 'Exo';
+  font-weight: 500;
+  color: #18a0fb;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.card{
+  padding: 120px 80px 110px;
+}
+.card h2{
+  margin-bottom: 70px;
+}
+.card ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card ul li img{
+  width: 108px;
+  height: 108px;
+  margin-bottom: 40px;
+}
+.card ul li p{
+  margin: 24px 0;
+}
+
+.sub{
+  width: 100%;
+  padding: 152px 80px;
+  background: #00000074;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.sub .img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.sub .img img{
+  display: block;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.sub p{
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 23px;
+}
+.sub .solid{
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 32px 0;
+}
+.sub span{
+  height: 43px;
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.21px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.sub .email{
+  margin-top: 95px;
+}
+.sub .email b{
+  display: block;
+  font-size: 16px;
+  letter-spacing: -0.24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.sub .email form{
+  display: inline-block;
+  position: relative;
+}
+.sub .email form input{
+  width: 500px;
+  height: 50px;
+  color: #fff;
+  font-family: 'Exo';
+  font-size: 16px;
+  letter-spacing: -0.24px;
+  padding: 0 50px 0 15px;
+  border-radius: 7px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: solid 1px #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+.sub .email form input.red{
+  border: solid 1px #ff6633;
+}
+.sub .email form input.green{
+  border: solid 1px #00c300;
+}
+.sub .email form button{
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.sub .email form button img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sub .email form button:disabled{
+  opacity: 0.5;
+  cursor: auto;
+}
+.sub .email span{
+  color: #ff6633;
+  text-align: left;
+  margin: 9px 16px 0;
+}
